@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Forum | AIMWARE.net</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="dns-prefetch" href="//cdn.aimware.net" />
+<link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+<link rel="dns-prefetch" href="//platform.twitter.com">
+<link rel="dns-prefetch" href="//ssl.google-analytics.com">
+<link rel="icon" type="image/png" href="//cdn.aimware.net/asset/img/favicon.svg">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Titillium+Web:400,600,700&display=swap">
+<link rel="stylesheet" href="//cdn.aimware.net/asset/css/bootstrap.css">
+<link rel="stylesheet" href="//cdn.aimware.net/asset/css/v2/website.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/railscasts.min.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="//cdn.jsdelivr.net/simplemde/latest/simplemde.min.css" />
+<link rel="stylesheet" href="//vjs.zencdn.net/7.7.5/video-js.css" />
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/sceditor@2.1.3/minified/themes/default.min.css" />
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/jquery-ui-dist@1.12.1/jquery-ui.min.css">
+<script>window.HELP_IMPROVE_VIDEOJS = false;</script>
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/jquery-ui-dist@1.12.1/jquery-ui.min.js"></script>
+<script src="//vjs.zencdn.net/7.7.5/video.js"></script>
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="//cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sceditor@2.1.3/minified/sceditor.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sceditor@2.1.3/minified/formats/bbcode.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/bootbox@5.4.0/bootbox.js"></script>
+<script src="//cdn.aimware.net/asset/js/aimware.js"></script>
+<script>aimware.ui.register();</script>
+<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+<div id="top"></div>
+<header class="header">
+<div class="container header-top-container">
+<div class="float-right">
+<a class="button-base button-user-top" href="/forum/user/login"><span class="fa fa-sign-in"></span> Login</a>
+<a class="button-base button-user-top" href="/forum/user/register"><span class="fa fa-user"></span> Register</a>
+</div>
+</div>
+<div class="blur">
+<div class="container header-nav-container">
+<div class="row">
+<div class="col-lg-12 align-self-center">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<a href="/"><img src="//cdn.aimware.net/asset/img/logo/main-standards.svg" alt="AIMWARE.net Logo" class="navbar-brand" /></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-id" aria-controls="navbar-main-id" aria-expanded="false" aria-label="Toggle navigation">
+<i class="fa fa-navicon" style="color:#fff; font-size:25px;"></i>
+</button>
+<div class="collapse navbar-collapse" id="navbar-main-id">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="/forum">Forum</a></li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Subscriptions</a>
+<div class="dropdown-menu columns dropdown-menu-right">
+<a class="dropdown-item" href="/cart/checkout/mpk">Master Package</a>
+<a class="dropdown-item" href="/cart/checkout/bf1">Battlefield 1</a>
+<a class="dropdown-item" href="/cart/checkout/bf4">Battlefield 4</a>
+<a class="dropdown-item" href="/cart/checkout/cs">Counter-Strike 1.6</a>
+<a class="dropdown-item" href="/cheats/counter-strike-global-offensive">Counter-Strike: Global Offensive</a>
+<a class="dropdown-item" href="/cart/checkout/css">Counter-Strike: Source</a>
+<a class="dropdown-item" href="/cart/checkout/gmod">Garry's Mod</a>
+<a class="dropdown-item" href="/cheats/left-4-dead-2">Left 4 Dead 2</a>
+<a class="dropdown-item" href="/cart/checkout/tf2">Team Fortress 2</a>
+</div>
+</li>
+<li class="nav-item"><a class="nav-link" href="/support">Support</a></li>
+</ul>
+</div>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div class="header-search-container">
+<div class="container">
+<div class="row">
+<div class="col-lg-6">
+<div class="section-forum-top-utils">
+<a class="button-base button-user-top" href="/forum/memberlist"><span class="fa fa-users"></span> Members</a>
+<a class="button-base button-user-top" href="/forum/team"><span class="fa fa-fort-awesome"></span> Team</a>
+<a class="button-base button-user-top" href="https://docs.aimware.net/"><span class="fa fa-book"></span> Documentation</a>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="pull-right">
+<form method="post" action="/forum/search" class="form-inline my-2 my-lg-0">
+<input class="form-control-sm mr-sm-2" type="text" name="term" placeholder="" aria-label="Text to search">
+<button class="btn btn-light btn-sm" type="submit">Search</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="container">
+<main class="row">
+<section class="col-lg-12">
+<section class="section-breadcrumbs">
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><span class="fa fa-home"></span> Forum</li>
+</ol>
+</nav>
+</section>
+<section class="col-lg-12 board-notice section-content">
+<b>Just purchased?</b> You can read the <a href="/forum/thread/10" rel="nofollow">instructions</a> and then proceed with the <a href="/vip" rel="nofollow">download</a>.
+</section>
+<section class="col-lg-12 section-base section-content">
+<div class="section-forum-top">
+<div class="d-flex">
+<div class="mr-auto">
+<h2>Public</h2>
+</div>
+<div class="ml-auto">
+<span data-board-collapse data-fid="3" class="collapser"><i class="fa fa-plus"></i></span>
+</div>
+</div>
+</div>
+<div class="board-collapse-3">
+
+<div class="row">
+<div class="col-lg-1 d-none d-lg-block forum-separator">
+<span class="board-icon-off"></span>
+</div>
+<div class="col-lg-6 forum-separator">
+<strong><a href="/forum/board/4">News</a></strong>
+<p>
+Important announcements for everyone. </p>
+<div class="row forum-child-bit">
+
+</div>
+</div>
+<div class="col-lg-2 d-none d-lg-block forum-separator">
+Threads: 75<br />
+Posts: 1,111 </div>
+<div class="col-lg-3 d-none d-lg-block forum-last-board-thread">
+<a href="/forum/thread/157369">Christmas sales!</a><br />
+by <a href="/forum/user/4">Zim</a><br />
+24-12-2021, 22:32 </div>
+</div>
+<div class="row">
+<div class="col-lg-1 d-none d-lg-block forum-separator">
+<span class="board-icon-off"></span>
+</div>
+<div class="col-lg-6 forum-separator">
+<strong><a href="/forum/board/47">Updates</a></strong>
+<p>
+If we have updated something, you can see it right here. </p>
+<div class="row forum-child-bit">
+
+</div>
+</div>
+<div class="col-lg-2 d-none d-lg-block forum-separator">
+Threads: 222<br />
+Posts: 306 </div>
+<div class="col-lg-3 d-none d-lg-block forum-last-board-thread">
+<a href="/forum/thread/168459">CS:GO Cheat Update</a><br />
+by <a href="/forum/user/3">polak</a><br />
+22-07-2022, 19:22 </div>
+</div>
+<div class="row">
+<div class="col-lg-1 d-none d-lg-block forum-separator">
+<span class="board-icon-off"></span>
+</div>
+<div class="col-lg-6 forum-separator">
+<strong><a href="/forum/board/5">Testimonial</a></strong>
+<p>
+See what paying customers have to say. </p>
+<div class="row forum-child-bit">
+
+</div>
+</div>
+<div class="col-lg-2 d-none d-lg-block forum-separator">
+Threads: 1,504<br />
+Posts: 3,982 </div>
+<div class="col-lg-3 d-none d-lg-block forum-last-board-thread">
+<a href="/forum/thread/168320">best cheat 10/10</a><br />
+by <a href="/forum/user/466965">Razvan</a><br />
+17-08-2022, 21:49 </div>
+</div>
+<div class="row">
+<div class="col-lg-1 d-none d-lg-block forum-separator">
+<span class="board-icon-off"></span>
+</div>
+<div class="col-lg-6 forum-separator">
+<strong><a href="/forum/board/7">Media</a></strong>
+<p>
+Videos and screenshots of customers using our software. </p>
+<div class="row forum-child-bit">
+
+</div>
+</div>
+<div class="col-lg-2 d-none d-lg-block forum-separator">
+Threads: 7,380<br />
+Posts: 19,359 </div>
+<div class="col-lg-3 d-none d-lg-block forum-last-board-thread">
+<a href="/forum/thread/169255">aimware compilation</a><br />
+by <a href="/forum/user/470817">riena</a><br />
+21-09-2022, 15:32 </div>
+</div>
+<div class="row">
+<div class="col-lg-1 d-none d-lg-block forum-separator">
+<span class="board-icon-off"></span>
+</div>
+<div class="col-lg-6 forum-separator">
+<strong><a href="/forum/board/6">Pre-Sale Support</a></strong>
+<p>
+Post your question about our products. </p>
+<div class="row forum-child-bit">
+
+<div class="col-lg-6">
+<span class="forum-child-list board-child-icon-off"><strong><a href="/forum/board/28">English</a></strong></span>
+</div>
+<div class="col-lg-6">
+<span class="forum-child-list board-child-icon-off"><strong><a href="/forum/board/74">Русский</a></strong></span>
+</div>
+<div class="col-lg-6">
+<span class="forum-child-list board-child-icon-off"><strong><a href="/forum/board/29">Deutsch</a></strong></span>
+</div>
+<div class="col-lg-6">
+<span class="forum-child-list board-child-icon-off"><strong><a href="/forum/board/30">Français</a></strong></span>
+</div>
+<div class="col-lg-6">
+<span class="forum-child-list board-child-icon-off"><strong><a href="/forum/board/37">Polski</a></strong></span>
+</div>
+<div class="col-lg-6">
+<span class="forum-child-list board-child-icon-off"><strong><a href="/forum/board/39">Italiano</a></strong></span>
+</div>
+<div class="col-lg-6">
+<span class="forum-child-list board-child-icon-off"><strong><a href="/forum/board/88">中文</a></strong></span>
+</div>
+<div class="col-lg-6">
+<span class="forum-child-list board-child-icon-off"><strong><a href="/forum/board/100">ภาษาไทย</a></strong></span>
+</div>
+</div>
+</div>
+<div class="col-lg-2 d-none d-lg-block forum-separator">
+Threads: 10,468<br />
+Posts: 27,802 </div>
+<div class="col-lg-3 d-none d-lg-block forum-last-board-thread">
+<a href="/forum/thread/169081">WIN11 100% 蓝屏？？？？？？？？？？</a><br />
+by <a href="/forum/user/205481">ashui2011225</a><br />
+02-09-2022, 00:19 </div>
+</div>
+</div>
+</section>
+<section class="col-lg-12 section-base section-content">
+<div class="section-forum-top"><h2>Information</h2></div>
+<p>
+286 users active (83 members, 0 of whom are invisible, and 203 guests).<br />
+<a href="/forum/user/515861"><span style="color:black">XkZzz1111</span></a>, <a href="/forum/user/425457"><strong><span style="color:#FFA000">YxcAvicii</span></strong></a>, <a href="/forum/user/252176"><strong><span style="color:#FFA000">CN.lonely</span></strong></a>, <a href="/forum/user/323263"><strong><span style="color:#FFA000">TDMTMD</span></strong></a>, <a href="/forum/user/498110"><strong><span style="color:#FFA000">kentcheng</span></strong></a>, <a href="/forum/user/514358"><strong><span style="color:#FFA000">dadong</span></strong></a>, <a href="/forum/user/344408"><strong><span style="color:#FFA000">brizzer22</span></strong></a>, <a href="/forum/user/201914"><strong><span style="color:#FFA000">LongNguyen</span></strong></a>, <a href="/forum/user/492282"><strong><span style="color:#FFA000">BGT200837</span></strong></a>, <a href="/forum/user/417375"><strong><span style="color:#FFA000">ArchK</span></strong></a>, <a href="/forum/user/440647"><strong><span style="color:#FFA000">1256753074</span></strong></a>, <a href="/forum/user/473051"><strong><span style="color:#FFA000">nikolaluo</span></strong></a>, <a href="/forum/user/515860"><span style="color:black">markiplier</span></a>, <a href="/forum/user/512411"><strong><span style="color:#FFA000">limeconsumer</span></strong></a>, <a href="/forum/user/10180"><strong><span style="color:#FFA000">alexxxx59</span></strong></a>, <a href="/forum/user/501181"><strong><span style="color:#FFA000">NFoxy</span></strong></a>, <a href="/forum/user/287302"><strong><span style="color:#FFA000">dwaynecharissa03</span></strong></a>, <a href="/forum/user/184882"><strong><span style="color:#FFA000">OrIoN7531</span></strong></a>, <a href="/forum/user/386650"><strong><span style="color:#FFA000">Space71136</span></strong></a>, <a href="/forum/user/454951"><strong><span style="color:#FFA000">ricynaynada</span></strong></a>, <a href="/forum/user/503185"><strong><span style="color:#FFA000">xiudeguigui</span></strong></a>, <a href="/forum/user/404020"><strong><span style="color:#FFA000">thewa</span></strong></a>, <a href="/forum/user/42129"><strong><span style="color:#FFA000">NynfoRain</span></strong></a>, <a href="/forum/user/505871"><span style="color:black">HyperDeathJack</span></a>, <a href="/forum/user/77649"><strong><span style="color:#FFA000">ASTRO007</span></strong></a>, <a href="/forum/user/306871"><strong><span style="color:#FFA000">Alternate</span></strong></a>, <a href="/forum/user/164879"><strong><span style="color:#FFA000">Fabi0220</span></strong></a>, <a href="/forum/user/507579"><strong><span style="color:#FFA000">tmgp</span></strong></a>, <a href="/forum/user/208771"><strong><span style="color:#FFA000">frannlp23</span></strong></a>, <a href="/forum/user/503624"><strong><span style="color:#FFA000">aiyi</span></strong></a>, <a href="/forum/user/474219"><strong><span style="color:#FFA000">aimwarelover2021</span></strong></a>, <a href="/forum/user/499085"><strong><span style="color:#FFA000">MM8</span></strong></a>, <a href="/forum/user/505900"><strong><span style="color:#FFA000">icey21</span></strong></a>, <a href="/forum/user/336384"><strong><span style="color:#FFA000">739734531</span></strong></a>, <a href="/forum/user/472372"><strong><span style="color:#FFA000">vvomanizer</span></strong></a>, <a href="/forum/user/210482"><strong><span style="color:#FFA000">sofaraway</span></strong></a>, <a href="/forum/user/290807"><strong><span style="color:#FFA000">airwaste</span></strong></a>, <a href="/forum/user/438176"><strong><span style="color:#FFA000">yaoyao1337</span></strong></a>, <a href="/forum/user/515546"><strong><span style="color:#FFA000">freezecorleone</span></strong></a>, <a href="/forum/user/228792"><strong><span style="color:#FFA000">vf13</span></strong></a>, <a href="/forum/user/485170"><strong><span style="color:#FFA000">lafanoire</span></strong></a>, <a href="/forum/user/388005"><strong><span style="color:#FFA000">imnotacheater123123</span></strong></a>, <a href="/forum/user/420656"><strong><span style="color:#FFA000">kypppl</span></strong></a>, <a href="/forum/user/225766"><strong><span style="color:#FFA000">o103142022</span></strong></a>, <a href="/forum/user/446515"><strong><span style="color:#FFA000">JaworTM</span></strong></a>, <a href="/forum/user/474295"><strong><span style="color:#FFA000">shaggyblankito</span></strong></a>, <a href="/forum/user/136797"><strong><span style="color:#FFA000">jhon_kevin18</span></strong></a>, <a href="/forum/user/455642"><strong><span style="color:#FFA000">jusuman11</span></strong></a>, <a href="/forum/user/471276"><strong><span style="color:#FFA000">vantommy</span></strong></a>, <a href="/forum/user/127421"><strong><span style="color:#FFA000">AstroCFG</span></strong></a>, <a href="/forum/user/486129"><strong><span style="color:#FFA000">KronixGamesense</span></strong></a>, <a href="/forum/user/486710"><strong><span style="color:#FFA000">qq623912446.</span></strong></a>, <a href="/forum/user/247336"><strong><span style="color:#FFA000">funschooter</span></strong></a>, <a href="/forum/user/294053"><strong><span style="color:#FFA000">dragonloreguy</span></strong></a>, <a href="/forum/user/271217"><strong><span style="color:#FFA000">GhostZ</span></strong></a>, <a href="/forum/user/406959"><strong><span style="color:#FFA000">Pro.mk</span></strong></a>, <a href="/forum/user/169401"><strong><span style="color:#FFA000">profareez</span></strong></a>, <a href="/forum/user/172412"><strong><span style="color:#FFA000">ByTulg</span></strong></a>, <a href="/forum/user/479120"><strong><span style="color:#FFA000">17841126</span></strong></a>, <a href="/forum/user/179963"><strong><span style="color:#FFA000">azert45</span></strong></a>, <a href="/forum/user/379831"><strong><span style="color:#FFA000">bubkod</span></strong></a>, <a href="/forum/user/270329"><strong><span style="color:#FFA000">Mikamav3</span></strong></a>, <a href="/forum/user/383810"><strong><span style="color:#FFA000">dhdj</span></strong></a>, <a href="/forum/user/199047"><strong><span style="color:#FFA000">Alley</span></strong></a>, <a href="/forum/user/514693"><strong><span style="color:#FFA000">soymiisy</span></strong></a>, <a href="/forum/user/515738"><strong><span style="color:#FFA000">Exodisma</span></strong></a>, <a href="/forum/user/195162"><strong><span style="color:#FFA000">Mac pro</span></strong></a>, <a href="/forum/user/159396"><span style="color:black">Pablokoloelo2004</span></a>, <a href="/forum/user/275383"><strong><span style="color:#FFA000">Skillsx</span></strong></a>, <a href="/forum/user/269499"><strong><span style="color:#FFA000">seanliao05</span></strong></a>, <a href="/forum/user/408029"><strong><span style="color:#FFA000">DiegoAndre</span></strong></a>, <a href="/forum/user/323488"><strong><span style="color:#FFA000">loverluver</span></strong></a>, <a href="/forum/user/265220"><strong><span style="color:#FFA000">16ye</span></strong></a>, <a href="/forum/user/288324"><strong><span style="color:#FFA000">AgudopIndifire</span></strong></a>, <a href="/forum/user/443702"><strong><span style="color:#FFA000">hoangtrongvinh</span></strong></a>, <a href="/forum/user/251010"><strong><span style="color:#FFA000">NoNamer123789</span></strong></a>, <a href="/forum/user/233003"><strong><span style="color:#FFA000">benisonpucan</span></strong></a>, <a href="/forum/user/360067"><strong><span style="color:#FFA000">allenguo</span></strong></a>, <a href="/forum/user/445835"><strong><span style="color:#FFA000">PandaQQ</span></strong></a>, <a href="/forum/user/351112"><strong><span style="color:#FFA000">xxHotGamerGirl</span></strong></a>, <a href="/forum/user/515588"><strong><span style="color:#FFA000">beyondhvh</span></strong></a>, <a href="/forum/user/512082"><strong><span style="color:#FFA000">xil216</span></strong></a> </p>
+<p>
+
+Please welcome our newest member, <a href="/forum/user/515861">XkZzz1111</a>.
+</p>
+</section>
+<section class="col-lg-12 section-content">
+<div class="row">
+<div class="col-lg-6">
+<img src="//cdn.aimware.net/asset/img/forum/board_on.svg" style="max-width: 55px; max-height: 55px" alt="Forum On" /> Board Contains New Posts<br>
+<img src="//cdn.aimware.net/asset/img/forum/board_off.svg" style="max-width: 55px; max-height: 55px" alt="Forum On" /> Board Contains No New Posts
+</div>
+<div class="col-lg-6">
+<div class="pull-right">
+</div>
+</div>
+</div>
+</section>
+</section>
+</main>
+</div>
+<footer class="footer">
+<div class="top dot-background">
+<div class="container">
+&nbsp;
+</div>
+</div>
+<div class="bottom">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 d-none d-lg-block separator">
+<img src="//cdn.aimware.net/asset/img/logo/main-plain.svg" alt="AIMWARE"><br><br>
+<b>NETSHARK SAGL</b><br>
+Via al Forte 2<br>
+6900 Lugano (CH)<br>
+<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="087b7d7878677a7c486961657f697a6d26666d7c">[email&#160;protected]</a>
+</div>
+<div class="col-lg-3 link-group">
+<h3>Community</h3>
+<ul class="no-style">
+<li><a href="/forum">Forum</a></li>
+<li><a href="/support">Support</a></li>
+<li><a href="/forum/board/5">Testimonials</a></li>
+<li><a href="/vip">VIP Panel</a></li>
+</ul>
+</div>
+<div class="col-lg-3 link-group">
+<h3>Company</h3>
+<ul class="no-style">
+<li><a href="/about-us">About Us</a></li>
+<li><a href="/contact">Contact Us</a></li>
+<li><a href="/terms-of-service">Terms of Service</a></li>
+<li><a href="/privacy-policy">Privacy Policy</a></li>
+<li><a href="/refund-policy">Refund Policy</a></li>
+</ul>
+</div>
+<div class="col-lg-3 link-group">
+<h3>Social</h3>
+<ul class="no-style">
+<li><img src="//cdn.aimware.net/asset/img/icon/social/youtube.svg" class="footer-icon" alt="YouTube"> <a href="https://www.youtube.com/user/AIMWARENET">YouTube</a></li>
+<li><img src="//cdn.aimware.net/asset/img/icon/social/twitter.svg" class="footer-icon" alt="Twitter"> <a href="https://twitter.com/AIMWARE">Twitter</a></li>
+</ul>
+</div>
+</div>
+<div class="copyright">
+Copyright &copy; 2022 AIMWARE. All rights reserved. All other trademarks, screenshots, logos and copyrights are the property of their respective owners.<br>
+Made with <i class="fa fa-heart hearth"></i> from Switzerland, Italy and Poland.
+</div>
+</div>
+</div>
+<a href="#top" class="gotop"><i class="fa fa-arrow-up"></i></a>
+</footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="//cdn.aimware.net/asset/js/bootstrap.bundle.js"></script>
+<script src="//cdn.aimware.net/asset/js/analytics.js"></script>
+</body>
+</html>
