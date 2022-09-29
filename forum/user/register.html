@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Registration | AIMWARE.net</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="dns-prefetch" href="//cdn.aimware.net" />
+<link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+<link rel="dns-prefetch" href="//platform.twitter.com">
+<link rel="dns-prefetch" href="//ssl.google-analytics.com">
+<link rel="icon" type="image/png" href="//cdn.aimware.net/asset/img/favicon.svg">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Titillium+Web:400,600,700&display=swap">
+<link rel="stylesheet" href="//cdn.aimware.net/asset/css/bootstrap.css">
+<link rel="stylesheet" href="//cdn.aimware.net/asset/css/v2/website.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/railscasts.min.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="//cdn.jsdelivr.net/simplemde/latest/simplemde.min.css" />
+<link rel="stylesheet" href="//vjs.zencdn.net/7.7.5/video-js.css" />
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/sceditor@2.1.3/minified/themes/default.min.css" />
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/jquery-ui-dist@1.12.1/jquery-ui.min.css">
+<script>window.HELP_IMPROVE_VIDEOJS = false;</script>
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/jquery-ui-dist@1.12.1/jquery-ui.min.js"></script>
+<script src="//vjs.zencdn.net/7.7.5/video.js"></script>
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="//cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sceditor@2.1.3/minified/sceditor.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sceditor@2.1.3/minified/formats/bbcode.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/bootbox@5.4.0/bootbox.js"></script>
+<script src="//cdn.aimware.net/asset/js/aimware.js"></script>
+<script>aimware.ui.register();</script>
+<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+<div id="top"></div>
+<header class="header">
+<div class="container header-top-container">
+<div class="float-right">
+<a class="button-base button-user-top" href="/forum/user/login"><span class="fa fa-sign-in"></span> Login</a>
+<a class="button-base button-user-top" href="/forum/user/register"><span class="fa fa-user"></span> Register</a>
+</div>
+</div>
+<div class="blur">
+<div class="container header-nav-container">
+<div class="row">
+<div class="col-lg-12 align-self-center">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<a href="/"><img src="//cdn.aimware.net/asset/img/logo/main-standards.svg" alt="AIMWARE.net Logo" class="navbar-brand" /></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-id" aria-controls="navbar-main-id" aria-expanded="false" aria-label="Toggle navigation">
+<i class="fa fa-navicon" style="color:#fff; font-size:25px;"></i>
+</button>
+<div class="collapse navbar-collapse" id="navbar-main-id">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="/forum">Forum</a></li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Subscriptions</a>
+<div class="dropdown-menu columns dropdown-menu-right">
+<a class="dropdown-item" href="/cart/checkout/mpk">Master Package</a>
+<a class="dropdown-item" href="/cart/checkout/bf1">Battlefield 1</a>
+<a class="dropdown-item" href="/cart/checkout/bf4">Battlefield 4</a>
+<a class="dropdown-item" href="/cart/checkout/cs">Counter-Strike 1.6</a>
+<a class="dropdown-item" href="/cheats/counter-strike-global-offensive">Counter-Strike: Global Offensive</a>
+<a class="dropdown-item" href="/cart/checkout/css">Counter-Strike: Source</a>
+<a class="dropdown-item" href="/cart/checkout/gmod">Garry's Mod</a>
+<a class="dropdown-item" href="/cheats/left-4-dead-2">Left 4 Dead 2</a>
+<a class="dropdown-item" href="/cart/checkout/tf2">Team Fortress 2</a>
+</div>
+</li>
+<li class="nav-item"><a class="nav-link" href="/support">Support</a></li>
+</ul>
+</div>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div class="header-search-container">
+<div class="container">
+<div class="row">
+<div class="col-lg-6">
+<div class="section-forum-top-utils">
+<a class="button-base button-user-top" href="/forum/memberlist"><span class="fa fa-users"></span> Members</a>
+<a class="button-base button-user-top" href="/forum/team"><span class="fa fa-fort-awesome"></span> Team</a>
+<a class="button-base button-user-top" href="https://docs.aimware.net/"><span class="fa fa-book"></span> Documentation</a>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="pull-right">
+<form method="post" action="/forum/search" class="form-inline my-2 my-lg-0">
+<input class="form-control-sm mr-sm-2" type="text" name="term" placeholder="" aria-label="Text to search">
+<button class="btn btn-light btn-sm" type="submit">Search</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="container">
+<main class="row">
+<section class="col-lg-12">
+<div class="section-container">
+<h1 class="section-title">Registration</h1>
+<div class="highlight highlight-margin"></div>
+<div class="section-base section-content">
+<form method="POST" action="/forum/user/register">
+<div class="form-group row">
+<label for="validationTooltip01" class="col-lg-2 col-form-label">Username</label>
+<div class="col-lg-10">
+<input type="text" id="username" name="username" class="form-control" required="required" aria-required="true" aria-label="Username" /> <small class="form-text text-muted">A unique name that you will use to log-in.</small>
+</div>
+</div>
+<div class="form-group row">
+<label for="inputEmail3" class="col-lg-2 col-form-label">Email</label>
+<div class="col-lg-5">
+<input type="email" id="email" name="email" class="form-control" required="required" aria-required="true" aria-label="E-mail" /> <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+</div>
+<div class="col-lg-5">
+<input type="email" id="emailconfirm" name="emailconfirm" class="form-control" required="required" aria-required="true" aria-label="E-mail confirmation" /> <small class="form-text text-muted">Confirm the email.</small>
+</div>
+</div>
+<div class="form-group row">
+<label for="inputPassword3" class="col-lg-2 col-form-label">Password</label>
+<div class="col-lg-5">
+<input type="password" id="password" name="password" class="form-control" required="required" aria-required="true" aria-label="Password" /> <small class="form-text text-muted">
+Set a complex password with minimum 12 characters.<br />
+It must contain a capital letter [A-Z]<br />
+It must contain a number [0-9]<br />
+It must contain a special character [.,<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d9f4f899">[email&#160;protected]</a>]
+</small>
+</div>
+<div class="col-lg-5">
+<input type="password" id="passwordconfirm" name="passwordconfirm" class="form-control" required="required" aria-required="true" aria-label="Password confirmation" /> <small class="form-text text-muted">Confirm the password.</small>
+</div>
+</div>
+<div class="form-group row">
+<label for="inputPassword3" class="col-lg-2 col-form-label">Captcha</label>
+<div class="col-lg-10">
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://www.hcaptcha.com/1/api.js" async defer></script><div class="h-captcha" data-sitekey="2dbb93b9-924d-4a21-a0a4-374559438165"></div> </div>
+</div>
+<div class="form-group">
+<div class="custom-control custom-checkbox lg-3">
+<input type="checkbox" id="customControlValidation1" name="age" class="custom-control-input" required="required" aria-required="true" aria-label="Age confirm" /> <label class="custom-control-label" for="customControlValidation1">
+I confirm I am at least 13 years old.
+</label>
+</div>
+<div class="custom-control custom-checkbox lg-3">
+<input type="checkbox" id="customControlValidation2" name="terms" class="custom-control-input" required="required" aria-required="true" aria-label="Terms of service agreement" /> <label class="custom-control-label" for="customControlValidation2">
+I have read, understood and agree the <a href="#">Terms of Service</a>.
+</label>
+</div>
+</div>
+<div class="form-group row">
+<label for="inputRegisterBtn" class="col-lg-2 col-form-label"></label>
+<div class="col-lg-10">
+<button class="btn-aimware" type="submit">Register</button>
+</div>
+</div>
+<input type="hidden" id="token" name="token" value="TUdYUytKRklORDJQSWd3NllRZkVudz09" /> </form>
+</div>
+</div>
+</section>
+</main>
+</div>
+<footer class="footer">
+<div class="top dot-background">
+<div class="container">
+&nbsp;
+</div>
+</div>
+<div class="bottom">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 d-none d-lg-block separator">
+<img src="//cdn.aimware.net/asset/img/logo/main-plain.svg" alt="AIMWARE"><br><br>
+<b>NETSHARK SAGL</b><br>
+Via al Forte 2<br>
+6900 Lugano (CH)<br>
+<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a0d3d5d0d0cfd2d4e0c1c9cdd7c1d2c58ecec5d4">[email&#160;protected]</a>
+</div>
+<div class="col-lg-3 link-group">
+<h3>Community</h3>
+<ul class="no-style">
+<li><a href="/forum">Forum</a></li>
+<li><a href="/support">Support</a></li>
+<li><a href="/forum/board/5">Testimonials</a></li>
+<li><a href="/vip">VIP Panel</a></li>
+</ul>
+</div>
+<div class="col-lg-3 link-group">
+<h3>Company</h3>
+<ul class="no-style">
+<li><a href="/about-us">About Us</a></li>
+<li><a href="/contact">Contact Us</a></li>
+<li><a href="/terms-of-service">Terms of Service</a></li>
+<li><a href="/privacy-policy">Privacy Policy</a></li>
+<li><a href="/refund-policy">Refund Policy</a></li>
+</ul>
+</div>
+<div class="col-lg-3 link-group">
+<h3>Social</h3>
+<ul class="no-style">
+<li><img src="//cdn.aimware.net/asset/img/icon/social/youtube.svg" class="footer-icon" alt="YouTube"> <a href="https://www.youtube.com/user/AIMWARENET">YouTube</a></li>
+<li><img src="//cdn.aimware.net/asset/img/icon/social/twitter.svg" class="footer-icon" alt="Twitter"> <a href="https://twitter.com/AIMWARE">Twitter</a></li>
+</ul>
+</div>
+</div>
+<div class="copyright">
+Copyright &copy; 2022 AIMWARE. All rights reserved. All other trademarks, screenshots, logos and copyrights are the property of their respective owners.<br>
+Made with <i class="fa fa-heart hearth"></i> from Switzerland, Italy and Poland.
+</div>
+</div>
+</div>
+<a href="#top" class="gotop"><i class="fa fa-arrow-up"></i></a>
+</footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="//cdn.aimware.net/asset/js/bootstrap.bundle.js"></script>
+<script src="//cdn.aimware.net/asset/js/analytics.js"></script>
+</body>
+</html>
