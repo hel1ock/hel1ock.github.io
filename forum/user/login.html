@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Registration | AIMWARE.net</title>
+<title>Login | AIMWARE.net</title>
 <meta name="description" content="">
 <meta name="author" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -106,64 +106,43 @@
 <main class="row">
 <section class="col-lg-12">
 <div class="section-container">
-<h1 class="section-title">Registration</h1>
+<h1 class="section-title">Login</h1>
 <div class="highlight highlight-margin"></div>
 <div class="section-base section-content">
-<form method="POST" action="/forum/user/register">
+<form method="POST" action="/forum/user/login">
 <div class="form-group row">
 <label for="validationTooltip01" class="col-lg-2 col-form-label">Username</label>
 <div class="col-lg-10">
-<input type="text" id="username" name="username" class="form-control" required="required" aria-required="true" aria-label="Username" /> <small class="form-text text-muted">A unique name that you will use to log-in.</small>
-</div>
-</div>
-<div class="form-group row">
-<label for="inputEmail3" class="col-lg-2 col-form-label">Email</label>
-<div class="col-lg-5">
-<input type="email" id="email" name="email" class="form-control" required="required" aria-required="true" aria-label="E-mail" /> <small class="form-text text-muted">We'll never share your email with anyone else.</small>
-</div>
-<div class="col-lg-5">
-<input type="email" id="emailconfirm" name="emailconfirm" class="form-control" required="required" aria-required="true" aria-label="E-mail confirmation" /> <small class="form-text text-muted">Confirm the email.</small>
+<input type="text" id="username" name="username" class="form-control" required="required" aria-required="true" aria-label="Username" /> <small class="form-text text-muted">Your username.</small>
 </div>
 </div>
 <div class="form-group row">
 <label for="inputPassword3" class="col-lg-2 col-form-label">Password</label>
-<div class="col-lg-5">
-<input type="password" id="password" name="password" class="form-control" required="required" aria-required="true" aria-label="Password" /> <small class="form-text text-muted">
-Set a complex password with minimum 12 characters.<br />
-It must contain a capital letter [A-Z]<br />
-It must contain a number [0-9]<br />
-It must contain a special character [.,<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d9f4f899">[email&#160;protected]</a>]
-</small>
+<div class="col-lg-10">
+<input type="password" id="password" name="password" class="form-control" required="required" aria-required="true" aria-label="Password" /> <small class="form-text text-muted">Your password.</small>
 </div>
-<div class="col-lg-5">
-<input type="password" id="passwordconfirm" name="passwordconfirm" class="form-control" required="required" aria-required="true" aria-label="Password confirmation" /> <small class="form-text text-muted">Confirm the password.</small>
+</div>
+<div class="form-group row">
+<label for="inputPassword3" class="col-lg-2 col-form-label">2FA</label>
+<div class="col-lg-10">
+<input type="text" id="code" name="code" class="form-control" aria-label="2FA HOTP Code" autocomplete="off" /> <small class="form-text text-muted"><span style="color:red; font-size: 15px">LEAVE BLANK If you don't know what it is or you haven't activated 2FA!</span></small>
 </div>
 </div>
 <div class="form-group row">
 <label for="inputPassword3" class="col-lg-2 col-form-label">Captcha</label>
 <div class="col-lg-10">
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://www.hcaptcha.com/1/api.js" async defer></script><div class="h-captcha" data-sitekey="2dbb93b9-924d-4a21-a0a4-374559438165"></div> </div>
-</div>
-<div class="form-group">
-<div class="custom-control custom-checkbox lg-3">
-<input type="checkbox" id="customControlValidation1" name="age" class="custom-control-input" required="required" aria-required="true" aria-label="Age confirm" /> <label class="custom-control-label" for="customControlValidation1">
-I confirm I am at least 13 years old.
-</label>
-</div>
-<div class="custom-control custom-checkbox lg-3">
-<input type="checkbox" id="customControlValidation2" name="terms" class="custom-control-input" required="required" aria-required="true" aria-label="Terms of service agreement" /> <label class="custom-control-label" for="customControlValidation2">
-I have read, understood and agree the <a href="#">Terms of Service</a>.
-</label>
-</div>
+<script src="https://www.hcaptcha.com/1/api.js" async defer></script><div class="h-captcha" data-sitekey="2dbb93b9-924d-4a21-a0a4-374559438165"></div> </div>
 </div>
 <div class="form-group row">
-<label for="inputRegisterBtn" class="col-lg-2 col-form-label"></label>
+<label for="inputLoginBtn" class="col-lg-2 col-form-label"></label>
 <div class="col-lg-10">
-<button class="btn-aimware" onclick="window.location.href - 'https://hel1ock.github.io/forum/user/login'">Register</button>
-
+<button class="btn-aimware" type="submit">Login</button>
+<p>
+<a href="/forum/user/recover">Lost password?</a> | <a href="/forum/user/register">Do not have an account?</a>
+</p>
 </div>
 </div>
-<input type="hidden" id="token" name="token" value="TUdYUytKRklORDJQSWd3NllRZkVudz09" /> </form>
+<input type="hidden" id="token" name="token" value="bStFLzY1T2ZWcTlTVnZXY0QzM0hlQT09" /> </form>
 </div>
 </div>
 </section>
@@ -183,7 +162,7 @@ I have read, understood and agree the <a href="#">Terms of Service</a>.
 <b>NETSHARK SAGL</b><br>
 Via al Forte 2<br>
 6900 Lugano (CH)<br>
-<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a0d3d5d0d0cfd2d4e0c1c9cdd7c1d2c58ecec5d4">[email&#160;protected]</a>
+<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="75060005051a070135141c18021407105b1b1001">[email&#160;protected]</a>
 </div>
 <div class="col-lg-3 link-group">
 <h3>Community</h3>
