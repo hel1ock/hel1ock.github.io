@@ -1,0 +1,42 @@
+{
+    "motd": "你好，欢迎来到我的源，这是在你使用我的源之后要注意的事项：1.本源会...",
+    "motd_time": "10",
+    "0": {
+        "name": "游戏1",
+        "preview": "https://static.launchersu.net/custom_game.png",
+        "processName": "game.exe",
+        "gameid": "730",
+        "list": [{
+            "name": "gamesense",
+            "descript": "描述",
+            "lastupd": "最后更新日期",
+            "dlurl": "https://github.com/hel1ock/hel1ock.github.io/raw/main/Gamesense.pub.dll",
+            "disabled": "0",
+            "compressed": "0",
+            "MD5": ""
+        }, {
+            "name": "My Cheat",
+            "descript": "F1 - ESP F2 - AimBot F3 - Glow",
+            "lastupd": "2022-1-1 00:00:00",
+            "dlurl": "https://github.com/hel1ock/hel1ock.github.io/raw/main/Gamesense.pub.dll",
+            "disabled": "0",
+            "compressed": "0",
+            "MD5": ""
+        }]
+    },
+    "1": {
+        "name": "csgo",
+        "preview": "https://static.launchersu.net/custom_game.png",
+        "processName": "csgo.exe",
+        "gameid": "730",
+        "list": [{
+            "name": "Glow Internal",
+            "descirpt": "F1 - Glow F2 - AimBot",
+            "lastupd": "2022-1-1 00:00:00",
+            "dlurl": "https://github.com/hel1ock/hel1ock.github.io/raw/main/Gamesense.pub.dll",
+            "disabled": "0",
+            "compressed": "0",
+            "MD5": ""
+        }]
+    }
+}
